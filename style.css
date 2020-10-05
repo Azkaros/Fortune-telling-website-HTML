@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Tera&display=swap');
+
+body {
+    background: linear-gradient(#9228FD, #564566);
+    font-family: 'Lexend Tera', sans-serif;
+}
+
+.button {
+    display: block;
+    width: 160px;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 0;
+    overflow: hidden;
+    position: relative;
+    transform: translatez(0);
+    text-decoration: none;
+    box-sizing: border-box;
+    font-size: 12px;
+	font-weight: normal;
+    box-shadow: 0 9px 18px rgba(0,0,0,0.2);
+    float: right;
+}
+.button2 {
+    display: block;
+    width: 80px;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 0;
+    overflow: hidden;
+    position: relative;
+    transform: translatez(0);
+    text-decoration: none;
+    box-sizing: border-box;
+    font-size: 24px;
+	font-weight: normal;
+    box-shadow: 0 9px 18px rgba(0,0,0,0.2);
+    float: left;
+}
+
+.instagram {
+	text-align: center;
+	border-radius: 50px;
+    padding: 26px;
+    color: white;
+    background: #BD3381;
+    transition: all 0.2s ease-out 0s;
+}
+
+.gradient {
+	display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    bottom: auto;
+    margin: auto;
+    z-index: -1;
+    background: radial-gradient(90px circle at top center, rgba(238,88,63,.8) 30%, rgba(255,255,255,0));
+    transition: all 0s ease-out 0s;
+	transform: translatex(-140px);
+	animation: 18s linear 0s infinite move;
+}
+
+@keyframes move {
+	0% {
+		transform: translatex(-140px);
+	}
+	25% {
+		transform: translatex(140px);
+		opacity: 0.3;
+	}
+	50% {
+		transform: translatex(140px);
+		opacity: 1;
+		background: radial-gradient(90px circle at bottom center, rgba(238,88,63,.5) 30%, rgba(255,255,255,0));
+	}
+	75% {
+		transform: translatex(-140px);
+		opacity: 0.3;
+	}
+	100% {
+		opacity: 1;
+		transform: translatex(-140px);
+		background: radial-gradient(90px circle at top center, rgba(238,88,63,.5) 30%, rgba(255,255,255,0));
+	}
+}
+
+.boule {
+    position: absolute; 
+    top: 40%; left: 50%; 
+    transform: translate(-50%, -50%); 
+}
+
+.textefutur {
+    position: absolute; 
+    top: 80%; left: 50%; 
+    transform: translate(-50%, -50%); 
+}
+
+footer
+{
+    color:white;
+    position:fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    height:60px;
+    padding:10px;
+    box-sizing:border-box;
+}
+
+footer ul
+{
+    list-style-type:none;
+}
+
+footer a
+{
+    color:#DCDCDC;
+    text-decoration:none;
+}
+
+footer a:hover
+{
+    color:#9228FD;
+}
+
+footer address
+{
+    position:absolute;
+    text-align:right;
+    bottom:10px;
+    right:10px;
+}
+
+footer address a
+{
+    display:block
+}
+
+.title {
+    font-size: 32px;
+    margin-top: 15px;
+    margin-left: 15px;
+    background: -webkit-linear-gradient(rgba(238,88,63,.8) 30%,#800080);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: solid;
+}

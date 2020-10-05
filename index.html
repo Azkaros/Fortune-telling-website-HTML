@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Voyance Gratuite - Regarde ton avenir dans la boule de cristal.</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/png" href="image/favicon.png">
+        <script>
+            var q;
+            var tabPhrases=["Dans ce siècle où tout se renouvelle, je ne sais pas de transformation plus importante que celle qui touche aux rapports des pères et des enfants dans la société moderne. Les enfants occupent aujourd'hui une place beaucoup plus grande dans la famille : on vit plus avec eux, on vit plus pour eux : soit redoublement de prévoyance et de tendresse, soit faiblesse et relâchement d'autorité, on s'occupe plus de leur santé, on surveille plus leur éducation, on songe plus à leur bien-être, on écoute plus leur opinion. Ils sont presque devenus les personnages principaux de la maison ; et un homme d'esprit caractérisait ce fait par un seul mot ; il disait : Messieurs les enfants ! (Ernest Legouvé)","De même qu’il faut savoir s’arrêter en art, qu’un moment vient toujours où une sculpture ne doit plus être touchée et qu’à cet égard une volonté d’inintelligence sert toujours plus un artiste que les ressources les plus déliées de la clairvoyance, de même il faut un minimum d’inintelligence pour parfaire une vie dans le bonheur. À ceux qui ne l’ont pas de la gagner. (Albert Camus)","Jeune homme il avait cru, comme l'adepte d'un religion, au prestige de la souffrance et de l'échec, à la clairvoyance procurée par l'alcool et au romantisme de l'adultère. Maintenant, il était incapable de concevoir pour lui-même une passion plus profonde que celle qu'il éprouvait pour sa femme et son fils, dont il remarquait qu'elle les enveloppait tous les trois d'une atmosphère plus chaude que l'air extérieur, aussi objectivement perceptible qu'un champ magnétique. (Antonio Muñoz Molina)", "Elle avait découvert la distorsion entre les discours engagés, humanistes et les réalités de l'existence, l'impossible application des plus nobles idées quand les intérêts personnels mis en jeu annihilaient toute clairvoyance et engageaient tout ce qui constituait votre vie. (Karine Tuil)"];
+
+            window.onload = function(){
+                q = document.getElementById('PHRASE');
+                numPhrase = Math.floor(Math.random()*tabPhrases.length);
+                var phrase = tabPhrases[numPhrase];
+                q.innerHTML = phrase;
+            }
+        </script>
+    </head>
+    <body>
+        <a href="connection.html" class="button instagram"><span class="gradient"></span>Connection</a>
+        <p class="title">Voyance Gratuite</p>
+        <img class="boule" src="image/boule.png" onclick="document.location.reload(false)">
+        <div class="textefutur" id="PHRASE"></div>
+        <footer>
+            <address>Nikolaï Lemerre <a href="mailto:nikolailemerre@gmail.com">Contactez moi !</a></address>
+        </footer>
+    </body>
+</html>
